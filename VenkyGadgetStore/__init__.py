@@ -12,9 +12,7 @@ def create_VenkyGadgetStore_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'my key'
     app.config['DATABASE_URL'] = f'postgres://rznsalywifovow:457099221710f6c1530351a2f371129b0c5227db93f4b41a25033f2b623630a8@ec2-52-215-68-14.eu-west-1.compute.amazonaws.com:5432/dat2cntmt9lq5f'
-    #app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
-
-    app.config['SQLALCHEMY_DATABASE_URI'] =f'postgres://rznsalywifovow:457099221710f6c1530351a2f371129b0c5227db93f4b41a25033f2b623630a8@ec2-52-215-68-14.eu-west-1.compute.amazonaws.com:5432/dat2cntmt9lq5f'
+    app.config['SQLALCHEMY_DATABASE_URI'] = f'sqlite:///{DB_NAME}'
     db.init_app(app)
 
     from .views import views
