@@ -1,6 +1,6 @@
-from VenkyGadgetStore import create_VenkyGadgetStore_app
+from eShop import eShopApplication
 
-app = create_VenkyGadgetStore_app()
+app = eShopApplication()
 
 if __name__ == '__main__':
     app.run(debug=True)
